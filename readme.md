@@ -15,6 +15,6 @@ const {AppStoreReviewPrompt} = window.cordova.plugins;
 AppStoreReviewPrompt.prompt(() => {
     console.log('Prompted successfully.');
 }, (error) => {
-    console.error(error); // > SKStoreReviewController not supported.
+    console.error(error.message); // > SKStoreReviewController not supported.
 });
 ```
