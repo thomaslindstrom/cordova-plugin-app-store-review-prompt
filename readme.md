@@ -12,9 +12,9 @@ Opens a `SKStoreReviewController` prompt if available, throws an error if it's n
 ```javascript
 const {AppStoreReviewPrompt} = window.cordova.plugins;
 
-try {
-    AppStoreReviewPrompt.prompt();
-} catch (error) {
-    // eg. redirect to the app store for a manual review
-}
+AppStoreReviewPrompt.prompt(() => {
+    console.log('Prompted successfully.');
+}, (error) => {
+    console.error(error); // > SKStoreReviewController not supported.
+});
 ```
