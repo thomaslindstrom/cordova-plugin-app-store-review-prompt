@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-app-store-review-prompt",
+  "version": "1.0.0",
+  "description": "Prompt the app user for a review of your app.",
+  "cordova": {
+    "id": "cordova-plugin-app-store-review-prompt",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaslindstrom/cordova-plugin-app-store-review-prompt.git"
+  },
+  "keywords": [
+    "cordova",
+    "skstorereviewcontroller",
+    "store",
+    "review",
+    "app",
+    "store",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Thomas Lindstrøm <t@hom.as>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomaslindstrom/cordova-plugin-app-store-review-prompt/issues"
+  },
+  "homepage": "https://github.com/thomaslindstrom/cordova-plugin-app-store-review-prompt#readme"
+}

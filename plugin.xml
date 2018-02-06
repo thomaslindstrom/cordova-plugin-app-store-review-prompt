@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-app-store-review-prompt" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AppStoreReviewPrompt</name>
+    <description>Prompt the app user for a review of your app.</description>
+    <keywords>cordova,skstorereviewcontroller,store,review,app,store</keywords>
+    <js-module name="AppStoreReviewPrompt" src="www/AppStoreReviewPrompt.js">
+        <clobbers target="cordova.plugins.AppStoreReviewPrompt" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AppStoreReviewPrompt">
+                <param name="ios-package" value="AppStoreReviewPrompt"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/AppStoreReviewPrompt.h" />
+        <source-file src="src/ios/AppStoreReviewPrompt.m" />
+    </platform>
+</plugin>
